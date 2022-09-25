@@ -54,16 +54,20 @@
         </button>
         <div class="h-60" id="colorFrame"></div>
         <div class="p-5">
-          <h1
-            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-          >
-            Colorz
-          </h1>
+            <div class="flex justify-between items-center">
+
+                <h1
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                Colorz
+            </h1>
+            <p id="hexVal" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">hexVal</p>
+        </div>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
             Just change cursor values to emulate colorz.
           </p>
           <form id="user">
-            <div class="grid gap-6 w-full grid-cols-2">
+            <div class="flex justify-between">
                 <label
                 for="redRange"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
@@ -78,7 +82,7 @@
               max="255"
               class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
             />
-            <div class="grid gap-6 w-full grid-cols-2">
+            <div class="flex justify-between">
 
                 <label
                 for="greenRange"
@@ -94,7 +98,7 @@
               max="255"
               class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
             />
-            <div class="grid gap-6 w-full grid-cols-2">
+            <div class="flex justify-between">
             <label
               for="blueRange"
               class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"

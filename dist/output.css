@@ -802,6 +802,14 @@ select {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
 .gap-6 {
   gap: 1.5rem;
 }
