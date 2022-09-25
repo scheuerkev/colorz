@@ -31,3 +31,37 @@ themeToggleButton.addEventListener("click", () => {
     }
   }
 });
+
+const redVal = document.getElementById("redVal");
+const redRange = document.getElementById("redRange");
+const greenVal = document.getElementById("greenVal");
+const greenRange = document.getElementById("greenRange");
+const blueVal = document.getElementById("blueVal");
+const blueRange = document.getElementById("blueRange");
+
+redVal.innerText = redRange.value;
+greenVal.innerText = greenRange.value;
+blueVal.innerText = blueRange.value;
+
+redRange.addEventListener("change", () => {
+  redVal.innerText = redRange.value;
+  changeColor();
+});
+greenRange.addEventListener("change", () => {
+  greenVal.innerText = greenRange.value;
+  changeColor();
+});
+blueRange.addEventListener("change", () => {
+  blueVal.innerText = blueRange.value;
+  changeColor();
+});
+
+const colorFrame = document.getElementById("colorFrame");
+
+const changeColor = () => {
+  if (redRange.value && greenRange.value && blueRange.value) {
+    rgbColor = `rgb(${redRange.value},${greenRange.value},${blueRange.value})`;
+
+    colorFrame.style.backgroundColor = rgbColor;
+  }
+};

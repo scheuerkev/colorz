@@ -52,7 +52,7 @@
             ></path>
           </svg>
         </button>
-        <div class="h-60"></div>
+        <div class="h-60" id="colorFrame"></div>
         <div class="p-5">
           <h1
             class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
@@ -63,47 +63,47 @@
             Just change cursor values to emulate colorz.
           </p>
           <form id="user">
-            <div class="grid gap-6 w-full md:grid-cols-2">
+            <div class="grid gap-6 w-full grid-cols-2">
                 <label
-                for="default-range"
+                for="redRange"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >Red</label
                 >
-                <p id="redVal" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">RedVal</p>
+                <p id="redVal" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"></p>
             </div>
             <input
-              id="default-range"
+              id="redRange"
               type="range"
               min="0"
               max="255"
               class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
             />
-            <div class="grid gap-6 w-full md:grid-cols-2">
+            <div class="grid gap-6 w-full grid-cols-2">
 
                 <label
-                for="default-range"
+                for="greenRange"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >Green</label
                 >
-                <p id="greenVal" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">GreenVal</p>
+                <p id="greenVal" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"></p>
             </div>
             <input
-              id="default-range"
+              id="greenRange"
               type="range"
               min="0"
               max="255"
               class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
             />
-            <div class="grid gap-6 w-full md:grid-cols-2">
+            <div class="grid gap-6 w-full grid-cols-2">
             <label
-              for="default-range"
+              for="blueRange"
               class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >Blue</label
             >
-            <p id="blueVal" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">BlueVal</p>
+            <p id="blueVal" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"></p>
             </div>
             <input
-              id="default-range"
+              id="blueRange"
               type="range"
               min="0"
               max="255"
